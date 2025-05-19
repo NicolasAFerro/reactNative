@@ -5,7 +5,7 @@ export default class App extends Component {
     render() {
         return (
             <SafeAreaView style={style.App}>
-                <Text style={style.Title}>sou filho do alemão</Text>
+                <Text style={style.Title}>hello toquei o titulo</Text>
             </SafeAreaView>
         );
     }
