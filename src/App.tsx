@@ -1,11 +1,11 @@
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
-
+import Header from './componets/Header/index';
 export default class App extends Component {
     render() {
         return (
             <SafeAreaView style={style.App}>
-                <Text style={style.Title}>hello toquei o titulo</Text>
+                <Header />
             </SafeAreaView>
         );
     }
@@ -13,13 +13,7 @@ export default class App extends Component {
 const style = StyleSheet.create({
     App: {
         flex: 1,
-        backgroundColor: 'black',
-        justifyContent: 'center',
-    },
-    Title: {
-        color: 'white',
-        fontSize: 30,
-        borderWidth: 1,
-        borderColor: 'red',
+        margin: 20,
+        backgroundColor: 'white',
     },
 });
