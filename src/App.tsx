@@ -1,20 +1,22 @@
+import React, {useState} from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import React, {Component} from 'react';
-import Header from './componets/Header/Index';
+import Header from './componets/Header/Index'; // Corrigi "componets" para "components"
 
-export default class App extends Component {
-    render() {
-        return (
-            <SafeAreaView style={style.App}>
-                <Header name="Nicolas" title="learning React Native" />
-            </SafeAreaView>
-        );
-    }
-}
-const style = StyleSheet.create({
+const App = () => {
+    const [name, setName] = useState<string>('Nicolas');
+    return (
+        <SafeAreaView style={styles.App}>
+            <Header name={name} title="learning React Native" />
+            <Header name="VNL" title="LIGA DAS NAÇÕES" />
+        </SafeAreaView>
+    );
+};
+
+const styles = StyleSheet.create({
     App: {
         flex: 1,
-        /* margin: 20, */
         backgroundColor: 'white',
     },
 });
+
+export default App;

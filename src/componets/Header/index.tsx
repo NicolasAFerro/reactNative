@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     },
     SubTitle: {
         color: 'black',
-        fontSize: 10,
+        fontSize: 20,
     },
 });
 
